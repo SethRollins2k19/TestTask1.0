@@ -1,0 +1,25 @@
+.Wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Circle{
+    margin: 0 auto;
+    height: calc(50vh - 20px);
+    width: calc(50vh - 20px);
+    position: relative;
+    border-radius: 50%;
+    /*animation: spin 10s linear infinite;*/
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.Input{
+    margin-top: 10px;
+}

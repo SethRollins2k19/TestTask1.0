@@ -1,0 +1,61 @@
+.CircleItem{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    left: 50%;
+    top: 50%;
+    /*animation: spinReverse 10s linear infinite;*/
+}
+
+.CircleShape{
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+.CircleWrapperText{
+    width: 1px;
+    height: 1px;
+    position: relative;
+}
+.CircleText{
+    position: absolute;
+    left: -10px;
+    border-radius: 17px;
+    top: 5px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    opacity: 0;
+}
+/*.CircleShape:after{*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    left: 15px;*/
+/*    border-radius: 17px;*/
+/*    top: 0;*/
+/*    border: 1px solid black;*/
+/*    padding: 5px 10px;*/
+/*    opacity: 0;*/
+/*}*/
+.CircleItemBlack{
+    background: black;
+}
+.CircleItem:hover{
+    z-index: 999;
+}
+.CircleItem:hover .CircleText{
+    opacity: 1;
+    background: white;
+}
+.CircleItem:hover .Circle{
+    animation: none;
+}
+@keyframes spinReverse {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
