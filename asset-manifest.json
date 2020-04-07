@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ModusReactApp/static/css/main.bc542c10.chunk.css",
-    "main.js": "/ModusReactApp/static/js/main.df418439.chunk.js",
-    "main.js.map": "/ModusReactApp/static/js/main.df418439.chunk.js.map",
+    "main.js": "/ModusReactApp/static/js/main.e3f6187f.chunk.js",
+    "main.js.map": "/ModusReactApp/static/js/main.e3f6187f.chunk.js.map",
     "runtime-main.js": "/ModusReactApp/static/js/runtime-main.e3c67406.js",
     "runtime-main.js.map": "/ModusReactApp/static/js/runtime-main.e3c67406.js.map",
     "static/js/2.d401c681.chunk.js": "/ModusReactApp/static/js/2.d401c681.chunk.js",
     "static/js/2.d401c681.chunk.js.map": "/ModusReactApp/static/js/2.d401c681.chunk.js.map",
     "index.html": "/ModusReactApp/index.html",
-    "precache-manifest.c8afc0be357c93759127c33fb93fd970.js": "/ModusReactApp/precache-manifest.c8afc0be357c93759127c33fb93fd970.js",
+    "precache-manifest.a5df54545e0f277fe96b5e739daceb86.js": "/ModusReactApp/precache-manifest.a5df54545e0f277fe96b5e739daceb86.js",
     "service-worker.js": "/ModusReactApp/service-worker.js",
     "static/css/main.bc542c10.chunk.css.map": "/ModusReactApp/static/css/main.bc542c10.chunk.css.map",
     "static/js/2.d401c681.chunk.js.LICENSE.txt": "/ModusReactApp/static/js/2.d401c681.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e3c67406.js",
     "static/js/2.d401c681.chunk.js",
     "static/css/main.bc542c10.chunk.css",
-    "static/js/main.df418439.chunk.js"
+    "static/js/main.e3f6187f.chunk.js"
   ]
 }
