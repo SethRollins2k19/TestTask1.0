@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cfa921e1-6112-4a3f-9657-ed3c20508513" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/CircleActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/CircleActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DataCircle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataCircle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DataCircleContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataCircleContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DataCircleItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataCircleItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/style/DataCircleItemStyle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/DataCircleItemStyle.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/style/DataCircleStyle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/DataCircleStyle.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducer/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/rootReducer.js" afterDir="false" />
     </list>
@@ -75,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586258592827</updated>
       <workItem from="1586258593998" duration="24618000" />
-      <workItem from="1586293782753" duration="8067000" />
+      <workItem from="1586293782753" duration="8884000" />
     </task>
     <servers />
   </component>
