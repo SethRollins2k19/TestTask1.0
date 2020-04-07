@@ -1,9 +1,10 @@
 import {changeCount, getItems} from "../actions/CircleActions";
 import {connect} from "react-redux";
-import {DataCircleComponent} from "./DataCircle";
+import DataCircleComponent from "./DataCircle";
 const mapStateToProps = state => {
     return {
-
+        items: state.items,
+        maxCount: state.maxCount
     }
 }
 const mapDispatchToProps = dispatch =>{

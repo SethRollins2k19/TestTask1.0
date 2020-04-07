@@ -1,22 +1,31 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import style from './style/DataCircleStyle.module.css'
 import DataCircleItemComponent from "./DataCircleItem";
 import {useSelector} from "react-redux";
 
-export const DataCircleComponent = ({changeCount,getItems}) =>{
-    let items = useSelector(state=>state.items);
-    if(items.length === 0){
-        getItems()
+export default class DataCircleComponent extends React.Component {
+    state = {
+        count: this.props.maxCount,
+        countOfTitled: 1,
+        // item: "",
+        // radian: 0,
     }
-    let maxCount = useSelector(state => state.maxCount);
-    const [count,setCount] = useState(maxCount)
+    render() {
+
+        const items = this.props.items;
+        if(items.length === 0){
+            this.props.getItems()
+        }
+        const changeCount = this.props.changeCount;
+        let count = this.state.count;
+        let countOfTitled = this.state.countOfTitled;
         return(
             <div className={style.Wrapper}>
                 <div className={`${style.Circle}`}>
                     {items.map((item, index) => {
-                        if(index<maxCount) {
+                        if(index<count) {
                             return (
-                                <DataCircleItemComponent key={index} item={item} index={index}/>
+                                <DataCircleItemComponent key={index} item={item} index={index} titled={countOfTitled>index}/>
                             )
                         } else {
                             return ""
@@ -24,10 +33,28 @@ export const DataCircleComponent = ({changeCount,getItems}) =>{
                     })}
                 </div>
                 <input type="text" value={count} onChange={(e)=>{
-                    if(Number(e.target.value) <1000){
-                        setCount(e.target.value)
+                    let value = Number(e.target.value);
+                    if(value <1000){
+                        this.setState(prevState=>{
+                            return{
+                                ...prevState,
+                                count: value
+                            }
+                        })
                     }}} className={style.Input}/>
-                    <button onClick={()=>changeCount(Number(count))}>change count</button>
+                    <input type="text" value={countOfTitled} onChange={(e)=>{
+                    let value = Number(e.target.value);
+                    if(value <1000){
+                        this.setState(prevState=>{
+                            return{
+                                ...prevState,
+                                countOfTitled: value
+                            }
+                        })
+                    }}} className={style.Input}/>
+                <button onClick={()=>changeCount(Number(count))}>change count</button>
             </div>
         )
+    }
 }
+

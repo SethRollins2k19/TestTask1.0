@@ -3,13 +3,12 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    left: 50%;
-    top: 50%;
 }
 
 .CircleShape{
-    width: 10px;
-    height: 10px;
+    z-index: 0;
+    width: 9px;
+    height: 9px;
     border: 1px solid gray;
     border-radius: 50%;
     transition: .6s linear;
@@ -20,29 +19,31 @@
     position: relative;
 }
 .CircleText{
+    z-index: 0;
     position: absolute;
+    color: black;
     left: -10px;
     border-radius: 17px;
     top: 5px;
     border: 1px solid black;
     padding: 5px 10px;
-    opacity: 0;
+    display: none;
 }
 
 .CircleItemBlack{
     background: black;
 }
-.CircleItem:hover{
+.CircleShape:hover + .CircleWrapperText .CircleText{
+    display: block;
     z-index: 999;
-
-}
-.CircleItem:hover .CircleText{
-    opacity: 1;
     background: white;
 }
-.CircleItem:hover .Circle{
-    animation: none;
+.CircleTextTitled{
+    display: block;
+    z-index: 99;
+    background: white;
 }
-.CircleItem:hover .CircleShape{
+.CircleShape:hover{
+    z-index: 999;
     background: slateblue;
 }
