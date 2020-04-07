@@ -9,7 +9,6 @@ export default class DataCircleItemComponent extends React.Component {
         let leftMove = Math.floor(Math.random()*90 - 45)
         let topMove = Math.floor(Math.random()*90 - 45)
         Animation(item,leftMove,topMove)
-        // Animation(item)
     }
 
     render() {

@@ -10,7 +10,6 @@ export const DataCircleComponent = ({changeCount,getItems}) =>{
     }
     let maxCount = useSelector(state => state.maxCount);
     const [count,setCount] = useState(maxCount)
-    console.log(maxCount)
         return(
             <div className={style.Wrapper}>
                 <div className={`${style.Circle}`}>
