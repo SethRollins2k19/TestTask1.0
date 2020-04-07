@@ -22,9 +22,6 @@ export const DataCircleComponent = ({changeCount,getItems}) =>{
                             return ""
                         }
                     })}
-                    <DataCircleItemComponent item={
-                        {title: "Google", link: "https://google.com", filled: false}
-                    }/>
                 </div>
                 <input type="text" value={count} onChange={(e)=>{
                     if(Number(e.target.value) <1000){
