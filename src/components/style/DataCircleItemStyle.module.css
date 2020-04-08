@@ -4,7 +4,14 @@
     align-items: center;
     text-decoration: none;
 }
-
+.CircleItem:hover{
+    z-index: 1000;
+}
+.CircleShape:hover .CircleText{
+    display: block;
+    z-index: 999;
+    background: white;
+}
 .CircleShape{
     z-index: 0;
     width: 9px;
